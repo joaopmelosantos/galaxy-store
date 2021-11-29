@@ -1,0 +1,18 @@
+.container {
+  padding: 25px 0;
+}
+
+.container .row {
+  width: 100%;
+  margin: 0;
+}
+
+#productTitle {
+  padding-bottom: 25px;
+}
+
+.row {
+  row-gap: 50px;
+  column-gap: 15px;
+  justify-content: space-around;
+}

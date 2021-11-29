@@ -1,0 +1,24 @@
+<div class="productItem">
+  <div class="productImage">
+    <img [src]="imageURL" />
+    <div class="category">
+      {{ category }}
+    </div>
+  </div>
+  <div class="productInfo">
+    <h5 id="pName">{{ name }}</h5>
+    <h5 id="price">
+      {{
+        price.toLocaleString("pt-br", {
+          style: "currency",
+          currency: "BRL"
+        })
+      }}
+    </h5>
+  </div>
+  <div class="addToCart">
+    <a [routerLink]="['/product', id]">
+      <button id="chartBtn" class="btn btn-secondary">See details</button>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Saturn",
+      "category": "Planet",
+      "price": 1290,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/1086/1086094.png"
+    },
+    {
+      "id": 2,
+      "name": "Earth",
+      "category": "Planet",
+      "price": 20000,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/139/139706.png"
+    },
+    {
+      "id": 3,
+      "name": "Jupiter",
+      "category": "Planet",
+      "price": 15721.47,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/124/124558.png"
+    },
+    {
+      "id": 4,
+      "name": "Neptune",
+      "category": "Planet",
+      "price": 7281.94,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/3594/3594089.png"
+    },
+    {
+      "id": 5,
+      "name": "Solar System",
+      "category": "System",
+      "price": 186500,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/2240/2240741.png"
+    },
+    {
+      "id": 6,
+      "name": "Sun",
+      "category": "Star",
+      "price": 9280.89,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/146/146199.png"
+    },
+    {
+      "id": 7,
+      "name": "Moon",
+      "category": "Satellite",
+      "price": 4874.95,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/616/616465.png"
+    },
+    {
+      "id": 8,
+      "name": "Black Hole",
+      "category": "Event",
+      "price": 1000000,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/433/433856.png"
+    },
+    {
+      "id": 9,
+      "name": "Supernova",
+      "category": "Event",
+      "price": 789650,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/433/433935.png"
+    },
+    {
+      "id": 10,
+      "name": "Pluton",
+      "category": "Satellite",
+      "price": 1650,
+      "imageURL": "https://cdn-icons-png.flaticon.com/512/773/773043.png"
+    }
+  ],
+  "cart": [],
+  "users": []
+}

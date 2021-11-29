@@ -1,0 +1,18 @@
+.nav {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 10px;
+}
+
+.nav-link {
+  background: blueviolet;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.nav a {
+  color: white;
+  transition: 0.15s box-shadow ease;
+}

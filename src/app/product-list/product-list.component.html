@@ -1,0 +1,16 @@
+<div class="container">
+  <div id="productTitle" class="row">
+    <h1 style="text-align: center">Product List</h1>
+  </div>
+  <div class="row">
+    <div *ngFor="let product of products" class="col-auto">
+      <app-product-item
+        [id]="product.id"
+        [name]="product.name"
+        [category]="product.category"
+        [price]="product.price"
+        [imageURL]="product.imageURL"
+      ></app-product-item>
+    </div>
+  </div>
+</div>

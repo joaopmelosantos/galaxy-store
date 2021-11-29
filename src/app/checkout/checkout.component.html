@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="row">
+    <div id="title" class="col-md-12">
+      <h2>Checkout</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row mb-3">
+    <div class="col">
+      <h5>Fill this form to complete your purchase!</h5>
+    </div>
+    <div class="col">
+      <h5>Cart Details</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div id="first-name" class="row mb-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="First Name"
+                formControlName="firstname"
+              />
+              <label for="floatingInput">First Name</label>
+            </div>
+          </div>
+        </div>
+        <div id="last-name" class="row mb-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Last Name"
+                formControlName="lastname"
+                required
+              />
+              <label for="floatingInput">Last Name</label>
+            </div>
+          </div>
+        </div>
+        <div id="email" class="row mb-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Email"
+                formControlName="email"
+                required="true"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+          </div>
+        </div>
+        <div id="phone" class="row mb-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="phone"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Phone"
+                formControlName="phone"
+                required
+              />
+              <label for="floatingInput">Phone</label>
+            </div>
+          </div>
+        </div>
+        <div id="address" class="row mb-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Address"
+                formControlName="address"
+                required
+              />
+              <label for="floatingInput">Address</label>
+            </div>
+          </div>
+        </div>
+        <div id="submit" class="row mb-3">
+          <div class="col">
+            <button class="btn btn-primary" type="submit">Purchase</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div
+        style="background: whitesmoke; margin: 0; padding: 10px 0"
+        class="row"
+      >
+        <app-checkout-items></app-checkout-items>
+        <div class="col">
+          <h3
+            class="pt-2"
+            style="text-align: right; border-top: 1px solid black"
+          >
+            {{ total }}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

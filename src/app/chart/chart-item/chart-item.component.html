@@ -1,0 +1,29 @@
+<div id="cartItem" class="row align-items-center justify-content-between">
+  <div id="product" class="col-md-6">
+    <img [src]="product.imageURL" />
+    <div class="info">
+      <h3>{{ product.name }}</h3>
+      <p>Category: {{ product.category }}</p>
+    </div>
+  </div>
+  <div id="quantity" class="col-md-2 qty mt-5">
+    <button (click)="decreaseQty()" class="minus bg-dark">-</button>
+    <input
+      type="number"
+      class="count"
+      name="qty"
+      [value]="product.quantity"
+      disabled
+    />
+    <button (click)="increaseQty()" class="plus bg-dark">+</button>
+  </div>
+  <div id="price" class="col-md-2">
+    <h4>{{ formatPrice(product.price * product.quantity) }}</h4>
+    <p>Unit Price: {{ formatPrice(product.price) }}</p>
+  </div>
+  <div id="actions" class="col-md-2">
+    <button (click)="removeItem()" class="btn btn-outline-danger">
+      Remove
+    </button>
+  </div>
+</div>

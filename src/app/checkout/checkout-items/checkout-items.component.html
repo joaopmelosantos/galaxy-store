@@ -1,0 +1,25 @@
+<div
+  style="width: 100%; margin: 0"
+  *ngFor="let product of cartList"
+  class="row"
+>
+  <div class="col">
+    <div class="row align-items-center">
+      <div class="col-md-4">
+        <h3>{{ product.name }}</h3>
+        <p style="font-size: 12px">Category: {{ product.category }}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="mr-2" style="display: inline-block">
+          {{ product.quantity }}x
+        </p>
+        <h6 style="display: inline-block">
+          {{ format(product.price) }}
+        </h6>
+      </div>
+      <div class="col-md-4">
+        <h4>{{ format(product.price * product.quantity) }}</h4>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.cartTitle {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container,
+.row {
+  width: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+#total {
+  background: whitesmoke;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+#total div:nth-child(1) h2 {
+  text-align: left;
+}
+
+#total div:nth-child(2) h2 {
+  text-align: right;
+}
+
+#cartHeader div:not(:first-child) h3 {
+  text-align: center;
+  width: 100%;
+}
+
+#cartHeader {
+  background: whitesmoke;
+  margin: 0;
+  padding: 10px 0;
+}

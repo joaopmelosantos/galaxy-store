@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row title">
+    <div class="col">
+      <h1>Product Details</h1>
+    </div>
+  </div>
+  <div class="blank-space"></div>
+  <div class="row info justify-content-center">
+    <div class="col-md-3">
+      <div class="img">
+        <img [src]="product.imageURL" />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="product-name">
+        <h2>{{ product.name }}</h2>
+      </div>
+      <div class="product-price">
+        <h4>
+          {{
+            product.price.toLocaleString("pt-br", {
+              style: "currency",
+              currency: "BRL"
+            })
+          }}
+        </h4>
+      </div>
+      <div class="product-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nostrum
+        magni illum odio iste, esse optio, quos sapiente ea, a earum? Voluptates
+        neque a laboriosam iusto. Aliquid ipsam corrupti officia!
+      </div>
+      <div class="add-to-chart">
+        <div *ngIf="!isOnCart()" id="quantity" class="qty mt-5">
+          <button (click)="decreaseQty()" class="minus bg-dark">-</button>
+          <input
+            type="number"
+            class="count"
+            name="qty"
+            [value]="showQty()"
+            disabled
+          />
+          <button (click)="increaseQty()" class="plus bg-dark">+</button>
+        </div>
+        <button
+          appAddedToChart
+          routerLink="/cart"
+          (click)="add()"
+          type="button"
+          class="btn btn-primary"
+          *ngIf="!isOnCart()"
+        >
+          Add to Chart
+        </button>
+        <button
+          appAddedToChart
+          routerLink="/cart"
+          type="button"
+          class="btn btn-success"
+          *ngIf="isOnCart()"
+        >
+          Product already on cart!
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

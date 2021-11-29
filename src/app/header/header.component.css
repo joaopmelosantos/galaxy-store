@@ -1,0 +1,25 @@
+#header {
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#header .row {
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#header h3 {
+  text-align: center;
+}
+
+.col-auto {
+  padding-bottom: 25px;
+}
+
+.logo {
+  width: 200px;
+  color: white;
+}

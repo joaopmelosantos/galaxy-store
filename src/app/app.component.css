@@ -1,0 +1,16 @@
+.col-md-8 {
+  padding-right: 50px;
+}
+
+.content {
+  display: flex;
+}
+
+header {
+  width: 20%;
+  background: #333;
+}
+
+main {
+  width: 80%;
+}
